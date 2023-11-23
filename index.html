@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Cliente</title>
+  <!-- Establece el estilo del cuerpo de la página -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+   
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado principal -->
+  <h1>Mi primer cliente </h1>
+
+  <!-- Líneas horizontales como separadores -->
+  <hr>
+  <hr>
+  <hr>
+
+  <!-- Contenedor para mostrar los detalles de la solicitud -->
+  <div class="container">
+    <!-- Título para la sección de solicitud -->
+    <h3>Solicitud:</h3>
+  </div>
+
+  <!-- Sección para seleccionar el método HTTP -->
+  <div class="form-group">
+    <label for="metodoMenu">
+      Metodo HTTP:
+    </label>
+    <!-- Menú desplegable para seleccionar el método HTTP -->
+    <select class="form-control" id="metodoMenu">
+      <option value="GET">obtener</option>
+      <option value="POST">crear</option>
+      <option value="PATCH">modificar</option>
+      <option value="DELETE">Eliminar</option>
+    </select>
+  </div>
+
+  <!-- Campo de entrada para la ruta -->
+  <div class="form-group">
+    <label for="rutaCampo">Ruta: </label>
+    <input id="rutaCampo" type="text" size="100">
+  </div>
+
+  <!-- Campo de entrada para el cuerpo de la solicitud -->
+  <div class="form-group">
+    <label for="cuerpoCampo">Cuerpo: </label>
+    <br><br>
+    <textarea id="cuerpoCampo" rows="10" cols="100" name="ingresar cuerpo de la Solicitud"></textarea>
+    <!-- <input id="cuerpoCampo" type="text" size="100"> -->
+  </div>
+
+  <!-- Botón para enviar la solicitud -->
+  <button type="submit" id="Send" class="btn btn-success">Enviar</button>
+
+  <!-- Contenedor para mostrar la respuesta recibida -->
+  <div class="container">
+    <!-- Título para la sección de respuesta -->
+    <h3>Respuesta:</h3>
+    <hr>
+
+    <!-- Sección para mostrar la respuesta recibida -->
+    <pre id="areaRespuesta"></pre>
+
+  </div>
+
+  <hr>
+
+  <!-- Incluye el archivo script.js que contiene el código JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
